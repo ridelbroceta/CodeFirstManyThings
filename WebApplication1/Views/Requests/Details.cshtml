@@ -1,0 +1,58 @@
+﻿@model App.Data.Entities.Request
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Request</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ReceiveDocType.DocTypeDesc)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ReceiveDocType.DocTypeDesc)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RequestDocType.DocTypeDesc)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RequestDocType.DocTypeDesc)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Status.StatusDesc)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Status.StatusDesc)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RequestDesc)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RequestDesc)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.StateId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.StateId)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.RequestId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
